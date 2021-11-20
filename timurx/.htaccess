@@ -1,0 +1,12 @@
+#Options -Multiviews 
+#Mencegah ketika direktori diakses lewat url
+#Exp : http://localhost:8012/website1-2/assets/upload/brosur.pdf
+Options -Indexes 
+
+#Direct ke Home Page
+#ErrorDocument 403 /website1-2/
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?url=$1 [L]
