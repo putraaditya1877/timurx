@@ -16,7 +16,7 @@ class topcustomer_model
     
     public function getAllstatustopCustomer2()
     {
-        $this->db->query('SELECT id FROM ' . $this->table);
+        $this->db->query('SELECT * FROM ' . $this->table);
         return $this->db->resultSet();
     }
 
@@ -48,4 +48,10 @@ class topcustomer_model
         $this->db->execute();
         return $this->db->rowCount();
         }
+        public function gettopCustomerByIdx($id)
+    {
+        $this->db->query('SELECT * FROM ' . $this->table . ' WHERE namacustomer=:id');
+        $this->db->bind('id', $id);
+        return $this->db->single();
+    }
     }

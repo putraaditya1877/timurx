@@ -4,8 +4,8 @@ class topcustomer extends Controller
 
     public function __construct(){
         if ($_SESSION['idtoko'] != '1' && $_SESSION['status'] != 'logged') {
-        //    Flasher::setFlash('Session anda telah','habis','red');
-          header('Location:'.BASEURL);
+        Flasher::setFlash('Session anda telah','habis','red');
+        header('Location:'.BASEURL);
         }
             date_default_timezone_set("Asia/Jakarta");
     }
@@ -22,8 +22,8 @@ class topcustomer extends Controller
     public function droptop(){
         $data['banner']         = $this->model('Home_model')->getBannerById();
         $data['judul']          = 'topcustomer | '.$data['banner']['judulwebsite'];
-        $data['topcustomer']       = $this->model('topcustomer_model')->getAllstatustopCustomer();
-        // var_dump($data['listtentangkami']);
+        $data['topcustomer']       = $this->model('topcustomer_model')->getAllstatustopCustomer2();
+        var_dump($data['topcustomer']);
        $this->view('fortuna/template/header', $data);
        $this->view('fortuna/admin/detail-topcustomer', $data);
        $this->view('fortuna/template/footer');
@@ -35,7 +35,9 @@ class topcustomer extends Controller
         $data['judul']          = 'topcustomer | '.$data['banner']['judulwebsite'];
         // $id = '1';
         // $data['produk']      = $this->model('Produk_model')->getAllProduk();
-        $data['topcustomer']       = $this->model('topcustomer_model')->gettopCustomerByid($id);
+        $data['topcustomerdetail']       = $this->model('topcustomer_model')->gettopCustomerByid($id);
+        $data['topcustomer']       = $this->model('topcustomer_model')->getAllstatustopCustomer2();
+        //var_dump($data);
         $this->view('fortuna/template/header', $data);
         $this->view('fortuna/admin/detail-topcustomer', $data);
         $this->view('fortuna/template/footer');
@@ -154,7 +156,10 @@ class topcustomer extends Controller
     }
 
     
-    public function getdroptop (){
+    public function getdroptop(){
+        $id = $_POST["namacustomer"];
+        var_dump($id);
+        die();
         $data = $this->model('topcustomer_model')->getAllstatustopCustomer();
         // $data['nama'] = 'topcustomer | '.$data['namacustomer'];
         echo json_encode ($data);

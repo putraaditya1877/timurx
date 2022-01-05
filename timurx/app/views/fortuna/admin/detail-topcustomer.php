@@ -27,12 +27,15 @@
                 <!-- ============================================================== -->
                 <!-- Konten -->
                 <!-- ============================================================== -->
+                <!-- <?php
+                var_dump($data['topcustomer']);
+                ?> -->
                 <?php 
-                    //var_dump($data['customer']);
-                    $id                    = $data['topcustomer']['id'];
-                    $namacustomer          = $data['topcustomer']['namacustomer'];
-                    $deskripsi             = $data['topcustomer']['deskripsi'];
-                    $gambarcustomer        = $data['topcustomer']['gambarcustomer'];
+                //    print_r($data['topcustomer']);
+                    $id                    = $data['topcustomerdetail']['id'];
+                    $namacustomer1         = $data['topcustomerdetail']['namacustomer'];
+                    $deskripsi             = $data['topcustomerdetail']['deskripsi'];
+                    $gambarcustomer        = $data['topcustomerdetail']['gambarcustomer'];
                 ?>
                 <div class="row">
                     <div class="col-md-12">
@@ -47,18 +50,24 @@
                                             <div class="form-group row">
                                             <label class="control-label col-sm-3 droptop">Nama Customer </label>
                                                 <div class="col-sm-9">
-                                                    <select class="form-control droptop" 
+                                                <select class="form-control droptop" 
                                                         name="droptop" data-id="droptop" id="droptop">
-                                                        
-                                                        <option  class="form-control droptop" 
-                                                        name="droptop" data-id="droptop" id="droptop"><?= $namacustomer ?></option>
-                        <optgroup label="Alaskan/Hawaiian Time Zone">
-                          <option value="AK">Alaska</option>
-                        </optgroup>
-                                                    </select> 
+                                                        <?php 
+                                                     foreach ($data['topcustomer'] as $ts){
+                                    // $id              = $ly['id'];
+                                    $idtop              = $ts['id'];                            
+                                    $namacustomer       = $ts['namacustomer'];
+                                    $waktu              = $ts['waktu'];
+                                    //  var_dump($namacustomer);   
+                                                        ?>
+                                                        <option> <?= $namacustomer ?> </option>
+                                     <?php 
+                                                        }
+                                                        ?>
+                                                        <input type="text" value="<?= $namacustomer1 ?>" id="idx">
+                                                    </select>                                                   
                                                 </div>
-                                            </div>
-                                            
+                                            </div>                                            
                                             <div class="form-group row">
                                                 <label for="cono1"
                                                     class="col-sm-3 text-end control-label ol-form-label">Deskripsi

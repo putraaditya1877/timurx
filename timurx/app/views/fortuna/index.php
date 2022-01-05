@@ -5,78 +5,76 @@ $logo           = $data['banner']['logoperusahaan'];
 $title          = $data['judul'];
 $judulbanner    = $data['banner']['judulbanner'];
 $subjudul       = $data['banner']['subjudul'];
-$deskripsiX      = $data['banner']['deskripsi'];
+$deskripsiX     = $data['banner']['deskripsi'];
 $fotobg         = $data['banner']['fotobackground'];
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="<?= BASEURL ?>assets/assetskk/img/apple-icon.png" />
-    <link rel="icon" type="image/png" href="<?= BASEURL ?>assets/upload/<?= $icon ?>" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>PT Timur Kasih Karunia</title>
-    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
-    <!--     Fonts and icons     -->
-    <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-    <!-- CSS Files -->
-    <link href="<?= BASEURL ?>assets/assetskk/css/material-kit.css?v=2.0.7" rel="stylesheet" />
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="<?= BASEURL ?>assets/assetskk/demo/demo.css" rel="stylesheet" />
-    <link rel="stylesheet" href="<?= BASEURL ?>assets/assetskk/css/style.css" />
-    <link rel="stylesheet" href="<?= BASEURL ?>assets/assetskk/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="<?= BASEURL ?>assets/assetskk/css/owl.theme.default.min.css" />
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="<?= BASEURL ?>assets/assetskk/img/apple-icon.png" />
+  <link rel="icon" type="image/png" href="<?= BASEURL ?>assets/upload/<?= $icon ?>" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>PT Timur Kasih Karunia</title>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+  <!-- CSS Files -->
+  <link href="<?= BASEURL ?>assets/assetskk/css/material-kit.css?v=2.0.7" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="<?= BASEURL ?>assets/assetskk/demo/demo.css" rel="stylesheet" />
+  <link rel="stylesheet" href="<?= BASEURL ?>assets/assetskk/css/style.css" />
+  <link rel="stylesheet" href="<?= BASEURL ?>assets/assetskk/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="<?= BASEURL ?>assets/assetskk/css/owl.theme.default.min.css" />
 </head>
+
 <body class="landing-page sidebar-collapse">
-    <nav class="
+  <nav class="
         navbar navbar-transparent navbar-color-on-scroll
         fixed-top
         navbar-expand-lg
       " color-on-scroll="100" id="sectionsNav">
-        <div class="container">
-            <div class="navbar-translate">
-                <a class="navbar-brand" href="index.html">
-                    <img src="<?= BASEURL ?>assets/upload/<?= $logo ?>" alt="" srcset="" class="img-fluid"
-                        width="300px" />
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="navbar-toggler-icon"></span>
-                    <span class="navbar-toggler-icon"></span>
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link smoothScroll top" href="#"> Beranda </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link smoothScroll scroll" href="#tentang-kami">
-                            Tentang Kami
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link smoothScroll scroll" href="#produk"> Produk </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link smoothScroll scroll" href="#customer"> Customer </a>
-                    </li>
-                    <!--<li class="nav-item">-->
-                    <!--    <a class="nav-link smoothScroll scroll" href="#"> brand </a>-->
-                    <!--</li>-->
-                    <li class="nav-item">
-                        <a class="nav-link smoothScroll scroll" href="#"> unduh brosur </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-success btn-call smoothScroll scroll" href="#hubungi-kami"
-                            style="color: white">Hubungi Kami</a>
-                    </li>
-                    <!-- <li class="nav-item">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="index.html">
+          <img src="<?= BASEURL ?>assets/upload/<?= $logo ?>" alt="" srcset="" class="img-fluid" width="300px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link smoothScroll top" href="#"> Beranda </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smoothScroll scroll" href="#tentang-kami">
+              Tentang Kami
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smoothScroll scroll" href="#produk"> Produk </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smoothScroll scroll" href="#customer"> Customer </a>
+          </li>
+          <!--<li class="nav-item">-->
+          <!--    <a class="nav-link smoothScroll scroll" href="#"> brand </a>-->
+          <!--</li>-->
+          <li class="nav-item">
+            <a class="nav-link smoothScroll scroll" href="#"> unduh brosur </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-success btn-call smoothScroll scroll" href="#hubungi-kami" style="color: white">Hubungi Kami</a>
+          </li>
+          <!-- <li class="nav-item">
               <a
                 class="btn btn-success nav-link smoothScroll scroll"
                 href="#hubungi-kami"
@@ -84,52 +82,52 @@ $fotobg         = $data['banner']['fotobackground'];
                 call us
               </a>
             </li> -->
-                </ul>
-                <!-- <a
+        </ul>
+        <!-- <a
             class="btn btn-success btn-call smoothScroll scroll"
             href="#hubungi-kami"
             >CALL US</a
           > -->
-            </div>
-        </div>
-    </nav>
-    <!-- MODAL LAYANAN -->
-    <!-- RETAIL -->
-          <?php 
-              foreach ($data['layanan'] as $lyk) {
-                                $gambarlayanan     = $lyk['gambarlayanan'];
-                                $judullayanan      = $lyk['listlayanankami'];
-                                $deskripsi        = $lyk['deskripsi'];
-                              //  var_dump($lyk);           
-?>
-    <div class="modal fade" id="<?= $judullayanan  ?>" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-           <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><?=  $judullayanan ?></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="material-icons">clear</i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                      <?= $deskripsi ?>
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
-                        Close
-                    </button>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-                <?php 
-              }
-                ?>
-    <!-- end -->
-    <!-- DISTRIBUSI -->
-    <!-- <div class="modal fade" id="informasi-akurat" tabindex="-1" role="dialog">
+  </nav>
+  <!-- MODAL LAYANAN -->
+  <!-- RETAIL -->
+  <?php
+  foreach ($data['layanan'] as $lyk) {
+    $gambarlayanan     = $lyk['gambarlayanan'];
+    $judullayanan      = $lyk['listlayanankami'];
+    $deskripsi        = $lyk['deskripsi'];
+    //  var_dump($lyk);           
+  ?>
+    <div class="modal fade" id="<?= $judullayanan  ?>" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><?= $judullayanan ?></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="material-icons">clear</i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <?= $deskripsi ?>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <?php
+  }
+  ?>
+  <!-- end -->
+  <!-- DISTRIBUSI -->
+  <!-- <div class="modal fade" id="informasi-akurat" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -167,13 +165,13 @@ $fotobg         = $data['banner']['fotobackground'];
 
     </div> -->
 
-    <!-- end -->
+  <!-- end -->
 
 
 
-    <!-- GROSIR -->
+  <!-- GROSIR -->
 
-    <!-- <div class="modal fade" id="pengiriman-cepat" tabindex="-1" role="dialog">
+  <!-- <div class="modal fade" id="pengiriman-cepat" tabindex="-1" role="dialog">
 
         <div class="modal-dialog modal-dialog-centered" role="document">
 
@@ -235,385 +233,378 @@ $fotobg         = $data['banner']['fotobackground'];
 
     </div> -->
 
-    <!-- end -->
-    <!-- END -->
+  <!-- end -->
+  <!-- END -->
 
-    <!-- MODAL PRODUK -->
-    <!-- produk 1 -->
-    <?php
-    $count = 1;
-    //*Produk
-    foreach ($data['produk'] as $prd) {
-        $namaproduk     = $prd['namaproduk'];
-        $deskripsi      = $prd['deskripsi'];
-    ?>
+  <!-- MODAL PRODUK -->
+  <!-- produk 1 -->
+  <?php
+  $count = 1;
+  //*Produk
+  foreach ($data['produk'] as $prd) {
+    $namaproduk     = $prd['namaproduk'];
+    $deskripsi      = $prd['deskripsi'];
+  ?>
     <!-- produk 1 -->
     <div class="modal fade" id="produk-<?= $count++ ?>" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><?= $namaproduk ?></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="material-icons">clear</i>
-                    </button>
-                </div>
-                <div class="modal-body" style="text-align: justify;">
-                    <p>
-                        <?= $deskripsi ?>
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
-                        Close
-                    </button>
-                </div>
-            </div>
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"><?= $namaproduk ?></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="material-icons">clear</i>
+            </button>
+          </div>
+          <div class="modal-body" style="text-align: justify;">
+            <p>
+              <?= $deskripsi ?>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
+              Close
+            </button>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- end -->
-    <?php
-    }
-    ?>
-    <!-- END -->
-    <!-- produk 2 -->
-    <div class="modal fade" id="produk-2" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">SIKU</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="material-icons">clear</i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Far far away, behind the word mountains, far from the countries
-                        Vokalia and Consonantia, there live the blind texts. Separated
-                        they live in Bookmarksgrove right at the coast of the Semantics, a
-                        large language ocean. A small river named Duden flows by their
-                        place and supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of sentences fly
-                        into your mouth. Even the all-powerful Pointing has no control
-                        about the blind texts it is an almost unorthographic life One day
-                        however a small line of blind text by the name of Lorem Ipsum
-                        decided to leave for the far World of Grammar.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
-                        Close
-                    </button>
-                </div>
-            </div>
+  <?php
+  }
+  ?>
+  <!-- END -->
+  <!-- produk 2 -->
+  <div class="modal fade" id="produk-2" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">SIKU</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="material-icons">clear</i>
+          </button>
         </div>
-    </div>
-    <!-- end -->
-    <!-- produk 3 -->
-    <div class="modal fade" id="produk-3" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">UNP</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="material-icons">clear</i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Far far away, behind the word mountains, far from the countries
-                        Vokalia and Consonantia, there live the blind texts. Separated
-                        they live in Bookmarksgrove right at the coast of the Semantics, a
-                        large language ocean. A small river named Duden flows by their
-                        place and supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of sentences fly
-                        into your mouth. Even the all-powerful Pointing has no control
-                        about the blind texts it is an almost unorthographic life One day
-                        however a small line of blind text by the name of Lorem Ipsum
-                        decided to leave for the far World of Grammar.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
-                        Close
-                    </button>
-                </div>
-            </div>
+        <div class="modal-body">
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated
+            they live in Bookmarksgrove right at the coast of the Semantics, a
+            large language ocean. A small river named Duden flows by their
+            place and supplies it with the necessary regelialia. It is a
+            paradisematic country, in which roasted parts of sentences fly
+            into your mouth. Even the all-powerful Pointing has no control
+            about the blind texts it is an almost unorthographic life One day
+            however a small line of blind text by the name of Lorem Ipsum
+            decided to leave for the far World of Grammar.
+          </p>
         </div>
-    </div>
-    <!-- end -->
-    <!-- produk 4 -->
-    <div class="modal fade" id="produk-4" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">BAJA RINGAN</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="material-icons">clear</i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Far far away, behind the word mountains, far from the countries
-                        Vokalia and Consonantia, there live the blind texts. Separated
-                        they live in Bookmarksgrove right at the coast of the Semantics, a
-                        large language ocean. A small river named Duden flows by their
-                        place and supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of sentences fly
-                        into your mouth. Even the all-powerful Pointing has no control
-                        about the blind texts it is an almost unorthographic life One day
-                        however a small line of blind text by the name of Lorem Ipsum
-                        decided to leave for the far World of Grammar.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
-                        Close
-                    </button>
-                </div>
-            </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
+            Close
+          </button>
         </div>
+      </div>
     </div>
-    <!-- end -->
-    <!-- produk 5 -->
-    <div class="modal fade" id="produk-5" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">PLAT ESSER</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="material-icons">clear</i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Far far away, behind the word mountains, far from the countries
-                        Vokalia and Consonantia, there live the blind texts. Separated
-                        they live in Bookmarksgrove right at the coast of the Semantics, a
-                        large language ocean. A small river named Duden flows by their
-                        place and supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of sentences fly
-                        into your mouth. Even the all-powerful Pointing has no control
-                        about the blind texts it is an almost unorthographic life One day
-                        however a small line of blind text by the name of Lorem Ipsum
-                        decided to leave for the far World of Grammar.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
-                        Close
-                    </button>
-                </div>
-            </div>
+  </div>
+  <!-- end -->
+  <!-- produk 3 -->
+  <div class="modal fade" id="produk-3" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">UNP</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="material-icons">clear</i>
+          </button>
         </div>
-    </div>
-    <!-- end -->
-    <!-- produk 6 -->
-    <div class="modal fade" id="produk-6" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">HOLLOW</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="material-icons">clear</i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Far far away, behind the word mountains, far from the countries
-                        Vokalia and Consonantia, there live the blind texts. Separated
-                        they live in Bookmarksgrove right at the coast of the Semantics, a
-                        large language ocean. A small river named Duden flows by their
-                        place and supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of sentences fly
-                        into your mouth. Even the all-powerful Pointing has no control
-                        about the blind texts it is an almost unorthographic life One day
-                        however a small line of blind text by the name of Lorem Ipsum
-                        decided to leave for the far World of Grammar.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
-                        Close
-                    </button>
-                </div>
-            </div>
+        <div class="modal-body">
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated
+            they live in Bookmarksgrove right at the coast of the Semantics, a
+            large language ocean. A small river named Duden flows by their
+            place and supplies it with the necessary regelialia. It is a
+            paradisematic country, in which roasted parts of sentences fly
+            into your mouth. Even the all-powerful Pointing has no control
+            about the blind texts it is an almost unorthographic life One day
+            however a small line of blind text by the name of Lorem Ipsum
+            decided to leave for the far World of Grammar.
+          </p>
         </div>
-    </div>
-    <!-- end -->
-    <!-- produk 7 -->
-    <div class="modal fade" id="produk-7" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">RENG</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="material-icons">clear</i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Far far away, behind the word mountains, far from the countries
-                        Vokalia and Consonantia, there live the blind texts. Separated
-                        they live in Bookmarksgrove right at the coast of the Semantics, a
-                        large language ocean. A small river named Duden flows by their
-                        place and supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of sentences fly
-                        into your mouth. Even the all-powerful Pointing has no control
-                        about the blind texts it is an almost unorthographic life One day
-                        however a small line of blind text by the name of Lorem Ipsum
-                        decided to leave for the far World of Grammar.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
-                        Close
-                    </button>
-                </div>
-            </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
+            Close
+          </button>
         </div>
+      </div>
     </div>
-    <!-- end -->
-    <!-- produk 8 -->
-    <div class="modal fade" id="produk-8" tabindex="-1" role="dialog">
-       <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">ALUMINIUM</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="material-icons">clear</i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Far far away, behind the word mountains, far from the countries
-                        Vokalia and Consonantia, there live the blind texts. Separated
-                        they live in Bookmarksgrove right at the coast of the Semantics, a
-                        large language ocean. A small river named Duden flows by their
-                        place and supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of sentences fly
-                        into your mouth. Even the all-powerful Pointing has no control
-                        about the blind texts it is an almost unorthographic life One day
-                        however a small line of blind text by the name of Lorem Ipsum
-                        decided to leave for the far World of Grammar.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
-                        Close
-                    </button>
-                </div>
-            </div>
+  </div>
+  <!-- end -->
+  <!-- produk 4 -->
+  <div class="modal fade" id="produk-4" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">BAJA RINGAN</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="material-icons">clear</i>
+          </button>
         </div>
+        <div class="modal-body">
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated
+            they live in Bookmarksgrove right at the coast of the Semantics, a
+            large language ocean. A small river named Duden flows by their
+            place and supplies it with the necessary regelialia. It is a
+            paradisematic country, in which roasted parts of sentences fly
+            into your mouth. Even the all-powerful Pointing has no control
+            about the blind texts it is an almost unorthographic life One day
+            however a small line of blind text by the name of Lorem Ipsum
+            decided to leave for the far World of Grammar.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
     </div>
-    <!-- END -->
+  </div>
+  <!-- end -->
+  <!-- produk 5 -->
+  <div class="modal fade" id="produk-5" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">PLAT ESSER</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="material-icons">clear</i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated
+            they live in Bookmarksgrove right at the coast of the Semantics, a
+            large language ocean. A small river named Duden flows by their
+            place and supplies it with the necessary regelialia. It is a
+            paradisematic country, in which roasted parts of sentences fly
+            into your mouth. Even the all-powerful Pointing has no control
+            about the blind texts it is an almost unorthographic life One day
+            however a small line of blind text by the name of Lorem Ipsum
+            decided to leave for the far World of Grammar.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end -->
+  <!-- produk 6 -->
+  <div class="modal fade" id="produk-6" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">HOLLOW</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="material-icons">clear</i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated
+            they live in Bookmarksgrove right at the coast of the Semantics, a
+            large language ocean. A small river named Duden flows by their
+            place and supplies it with the necessary regelialia. It is a
+            paradisematic country, in which roasted parts of sentences fly
+            into your mouth. Even the all-powerful Pointing has no control
+            about the blind texts it is an almost unorthographic life One day
+            however a small line of blind text by the name of Lorem Ipsum
+            decided to leave for the far World of Grammar.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end -->
+  <!-- produk 7 -->
+  <div class="modal fade" id="produk-7" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">RENG</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="material-icons">clear</i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated
+            they live in Bookmarksgrove right at the coast of the Semantics, a
+            large language ocean. A small river named Duden flows by their
+            place and supplies it with the necessary regelialia. It is a
+            paradisematic country, in which roasted parts of sentences fly
+            into your mouth. Even the all-powerful Pointing has no control
+            about the blind texts it is an almost unorthographic life One day
+            however a small line of blind text by the name of Lorem Ipsum
+            decided to leave for the far World of Grammar.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end -->
+  <!-- produk 8 -->
+  <div class="modal fade" id="produk-8" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">ALUMINIUM</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="material-icons">clear</i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated
+            they live in Bookmarksgrove right at the coast of the Semantics, a
+            large language ocean. A small river named Duden flows by their
+            place and supplies it with the necessary regelialia. It is a
+            paradisematic country, in which roasted parts of sentences fly
+            into your mouth. Even the all-powerful Pointing has no control
+            about the blind texts it is an almost unorthographic life One day
+            however a small line of blind text by the name of Lorem Ipsum
+            decided to leave for the far World of Grammar.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END -->
 
-    <!-- MODAL Customer -->
-    <!-- customer 1 -->
-   <?php
-   if (count($data['topcustomer'])) {
+  <!-- MODAL Customer -->
+  <!-- customer 1 -->
+  <?php
+  if (count($data['topcustomer'])) {
     $count = 1;
-    foreach ($data['topcustomer'] as $prd){
-        $namacustomer   = $prd['namacustomer'];
-        $deskripsi      = $prd['deskripsi'];
-    ?>
-    <!-- produk 1 -->
-    <div class="modal fade" id="topcustomer-<?= $count++ ?>" tabindex="-1" role="dialog">
+    foreach ($data['topcustomer'] as $prd) {
+      $namacustomer   = $prd['namacustomer'];
+      $deskripsi      = $prd['deskripsi'];
+  ?>
+      <!-- produk 1 -->
+      <div class="modal fade" id="topcustomer-<?= $count++ ?>" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><?= $namacustomer ?></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="material-icons">clear</i>
-                    </button>
-                </div>
-                <div class="modal-body" style="text-align: justify;">
-                    <p>
-                        <?= $deskripsi ?>
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
-                        Close
-                    </button>
-                </div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"><?= $namacustomer ?></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="material-icons">clear</i>
+              </button>
             </div>
+            <div class="modal-body" style="text-align: justify;">
+              <p>
+                <?= $deskripsi ?>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- end -->
-    <?php
+      <!-- end -->
+  <?php
     }
   }
-    ?>
-   
+  ?>
 
 
-    <div class="page-header header-filter" data-parallax="true"
 
-        style="background-image: url('<?= BASEURL ?>assets/upload/<?= $fotobg; ?>')">
+  <div class="page-header header-filter" data-parallax="true" style="background-image: url('<?= BASEURL ?>assets/upload/<?= $fotobg; ?>')">
 
-        <div class="container top-content">
+    <div class="container top-content">
 
-            <div class="row float-right">
+      <div class="row float-right">
 
-                <div class="banner">
+        <div class="banner">
 
-                    <div class="row mb-3">
+          <div class="row mb-3">
 
-                        <div class="col-lg-12">
+            <div class="col-lg-12">
 
-                            <h1 class="title"><?= $judulbanner ?></h1>
+              <h1 class="title"><?= $judulbanner ?></h1>
 
-                            <!-- <h3 class="mt-0 pt-0">Supplier Baja Ringan Terpercaya</h3> -->
+              <!-- <h3 class="mt-0 pt-0">Supplier Baja Ringan Terpercaya</h3> -->
 
-                            <h3 class="mt-0 pt-0"><?=  $subjudul?></h3>
+              <h3 class="mt-0 pt-0"><?= $subjudul ?></h3>
 
-                        </div>
+            </div>
 
-                        <div class="col-lg-12">
+            <div class="col-lg-12">
 
-                            <h4>
+              <h4>
 
-                                <!-- Melayani pembelian grosir baja ringan Reng, Galvalume, Canal
+                <!-- Melayani pembelian grosir baja ringan Reng, Galvalume, Canal
 
                                 C, Hollo Plafon, dsb -->
 
-                                <?= $deskripsiX ?>
+                <?= $deskripsiX ?>
 
-                            </h4>
+              </h4>
 
-                        </div>
+            </div>
 
-                    </div>
-
-
-
-                    <?php 
-
-                        foreach ($data['brosur'] as $brs) {
-
-                            $fileBrosur     = $brs['filebrosur'];
-
-                            
-
-                        }
-
-                     ?>
-
-                    <a href="<?= BASEURL ?>assets/upload/brosur/<?= $fileBrosur ?>" target="_blank"
-
-                        class="btn-cpk btn btn-raised btn-md smoothSchroll scroll">Cek Brosur Online</a>
+          </div>
 
 
 
-                    <a href="#hubungi-kami" class="btn-cpk btn btn-raised btn-md smoothScroll scroll">
+          <?php
 
-                        HUBUNGI KAMI
+          foreach ($data['brosur'] as $brs) {
 
-                    </a>
+            $fileBrosur     = $brs['filebrosur'];
+          }
 
-                    <!-- <div
+          ?>
+
+          <a href="<?= BASEURL ?>assets/upload/brosur/<?= $fileBrosur ?>" target="_blank" class="btn-cpk btn btn-raised btn-md smoothSchroll scroll">Cek Brosur Online</a>
+
+
+
+          <a href="#hubungi-kami" class="btn-cpk btn btn-raised btn-md smoothScroll scroll">
+
+            HUBUNGI KAMI
+
+          </a>
+
+          <!-- <div
 
               class="col-md-5 float-right"
 
@@ -669,61 +660,57 @@ $fotobg         = $data['banner']['fotobackground'];
 
             </div> -->
 
-                </div>
-
-            </div>
-
         </div>
+
+      </div>
 
     </div>
 
-    <div class="main">
+  </div>
 
-        <!-- LAYANAN KAMI -->
+  <div class="main">
 
-        <section class="section-padding" id="tentang-kami">
+    <!-- LAYANAN KAMI -->
 
-            <div>
+    <section class="section-padding" id="tentang-kami">
 
-                <div class="section text-center">
+      <div>
 
-                    <h2>MENGAPA MEMILIH KAMI?</h2>
+        <div class="section text-center">
 
-                    <div class="col-md-8 ml-auto mr-auto mt-5 mb-5">
+          <h2>MENGAPA MEMILIH KAMI?</h2>
 
-                        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto mt-5 mb-5">
 
-                            <?php
+            <div class="row">
 
-                            // $count = 1;
+              <?php
 
-                            //*Produk
+              // $count = 1;
 
-                            foreach ($data['layanan'] as $ly) {
+              //*Produk
 
-                                $gambarlayanan     = $ly['gambarlayanan'];
+              foreach ($data['layanan'] as $ly) {
 
-                                $judullayanan      = $ly['listlayanankami'];
+                $gambarlayanan     = $ly['gambarlayanan'];
 
-                                // var_dump($judullayanan);          
+                $judullayanan      = $ly['listlayanankami'];
 
-                            ?>
+                // var_dump($judullayanan);          
 
-                            <div class="col-md-4 col-12">
+              ?>
 
-                                <img data-toggle="modal" data-target="#<?= $judullayanan ?>"
+                <div class="col-md-4 col-12">
 
-                                    src="<?= BASEURL ?>assets/upload/<?= $gambarlayanan ?>"
+                  <img data-toggle="modal" data-target="#<?= $judullayanan ?>" src="<?= BASEURL ?>assets/upload/<?= $gambarlayanan ?>" class="layanan-item img-raised rounded img-fluid" alt="" />
 
-                                    class="layanan-item img-raised rounded img-fluid" alt="" />
+                </div>
 
-                            </div>
+              <?php
 
-                            <?php
+              }
 
-                            }
-
-                            ?>
+              ?>
 
 
 
@@ -731,7 +718,7 @@ $fotobg         = $data['banner']['fotobackground'];
 
 
 
-                            <!-- <div class="col-md-4 col-12">
+              <!-- <div class="col-md-4 col-12">
 
                                 <img data-toggle="modal" data-target="#produk-lengkap" src="assets/img/02.jpg"
 
@@ -755,160 +742,153 @@ $fotobg         = $data['banner']['fotobackground'];
 
                             </div> -->
 
-                        </div>
+            </div>
 
-                    </div>
+          </div>
 
-                    <!-- carousel -->
+          <!-- carousel -->
 
-                    <div class="col-md-12 pt-lg-4 mt-2 play-c">
+          <div class="col-md-12 pt-lg-4 mt-2 play-c">
 
-                        <div id="owl-tk" class="owl-carousel owl-theme">
+            <div id="owl-tk" class="owl-carousel owl-theme">
 
-                            <div class="item">
+              <div class="item">
 
-                                <img class="mr-auto ml-auto" src="<?= BASEURL ?>assets/assetskk/img/06.jpg" alt=""
+                <img class="mr-auto ml-auto" src="<?= BASEURL ?>assets/assetskk/img/06.jpg" alt="" srcset="" />
 
-                                    srcset="" />
+                <h1>
 
-                                <h1>
+                  Lebih dari 12 tahun <br />
 
-                                    Lebih dari 12 tahun <br />
+                  di industri baja ringan
 
-                                    di industri baja ringan
+                </h1>
 
-                                </h1>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
+              </div>
 
             </div>
 
-        </section>
+          </div>
 
-        <!-- END -->
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- END -->
 
 
 
-        <!-- PRODUCT -->
+    <!-- PRODUCT -->
 
-        <section class="section-padding" id="produk">
+    <section class="section-padding" id="produk">
 
-            <div class="bg-grey">
+      <div class="bg-grey">
 
-                <div class="section text-center">
+        <div class="section text-center">
 
-                    <div class="col-md-8 ml-auto mr-auto">
+          <div class="col-md-8 ml-auto mr-auto">
 
-                        <h2>PRODUK</h2>
-                        <!-- <h5 class="description">
+            <h2>PRODUK</h2>
+            <!-- <h5 class="description">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
               </h5> -->
-                        <div class="row">
-                            <?php
-                            $count = 1;
-                            //*Produk
-                            foreach ($data['produk'] as $prd) {
-                                // var_dump($prd);
-                                $namaproduk     = $prd['namaproduk'];
-                                $deskripsi      = $prd['deskripsi'];
-                                $gambarProduk   = $prd['gambarproduk']; ?>
-                            <div class="col-md-3 col-6">
-                                <img data-toggle="modal" data-target="#produk-<?= $count++ ?>"
-                                    class="img-produk img-raised rounded img-fluid"
-                                    src="<?= BASEURL ?>assets/upload/produk/<?= $gambarProduk ?>" alt="" srcset="" />
-                            </div>
-                            <?php
-                            }
-                            ?>
-                            <!-- <div class="col-md-3 col-6">
+            <div class="row">
+              <?php
+              $count = 1;
+              //*Produk
+              foreach ($data['produk'] as $prd) {
+                // var_dump($prd);
+                $namaproduk     = $prd['namaproduk'];
+                $deskripsi      = $prd['deskripsi'];
+                $gambarProduk   = $prd['gambarproduk']; ?>
+                <div class="col-md-3 col-6">
+                  <img data-toggle="modal" data-target="#produk-<?= $count++ ?>" class="img-produk img-raised rounded img-fluid" src="<?= BASEURL ?>assets/upload/produk/<?= $gambarProduk ?>" alt="" srcset="" />
+                </div>
+              <?php
+              }
+              ?>
+              <!-- <div class="col-md-3 col-6">
                                 <img data-toggle="modal" data-target="#produk-1"
                                     class="img-produk img-raised rounded img-fluid" src="assets/img/07.png" alt=""
                                     srcset="" />
                             </div> -->
-                        </div>
-                    </div>
-                </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- END -->
-        
-        <section class="section-padding" id="customer">
-        <div class="container-fluid section-padding bg-grey pb-2">
+    <!-- END -->
+
+    <section class="section-padding" id="customer">
+      <div class="container-fluid section-padding bg-grey pb-2">
         <div class="section mb-0">
           <h2 class="text-center ml-auto mr-auto" style="max-width: 600px;">TOP #3 CUSTOMER</h2>
         </div>
         <div class="col-md-6 col-12 ml-auto mr-auto">
-        <div class="row">
+          <div class="row">
             <?php
-                if (count($data['topcustomer'])) {
-                  $count = 1;
-                  foreach ($data['topcustomer'] as $prd) {
-                    //var_dump($prd);
-                    $namacustomer     = $prd['namacustomer'];
-                    $deskripsi        = $prd['deskripsi'];
-                    $gambarcustomer   = $prd['gambarcustomer']; ?>
+            if (count($data['topcustomer'])) {
+              $count = 1;
+              foreach ($data['topcustomer'] as $prd) {
+                //var_dump($prd);
+                $namacustomer     = $prd['namacustomer'];
+                $deskripsi        = $prd['deskripsi'];
+                $gambarcustomer   = $prd['gambarcustomer']; ?>
                 <div class="col-md-4 col-10 ml-auto mr-auto">
-                    <img data-toggle="modal" data-target="#topcustomer-<?= $count++ ?>"
-                        class="img-customer img-raised rounded img-fluid"
-                        src="<?= BASEURL ?>assets/upload/customer/<?= $gambarcustomer ?>" alt="" srcset="" />
+                  <img data-toggle="modal" data-target="#topcustomer-<?= $count++ ?>" class="img-customer img-raised rounded img-fluid" src="<?= BASEURL ?>assets/upload/customer/<?= $gambarcustomer ?>" alt="" srcset="" />
                 </div>
-                <?php
-                }
+            <?php
               }
-                ?>
-                </div>
+            }
+            ?>
+          </div>
           <div class="text-center ml-3 pt-1 pb-1">
             <h4>Sudah banyak yang telah mempercayakan produknya di PT Timur Kasih Karunia. Apakah anda selanjutnya?</h4>
           </div>
         </div>
         <!-- carousel -->
-            <?php
-                if (count($data['customer'])) {
-                  $count = 1;
-                  foreach ($data['customer'] as $prd) {
-                    //var_dump($prd);
-                    $namacustomer     = $prd['namacustomer'];
-                    $deskripsi        = $prd['deskripsi'];
-                    $gambarcustomer   = $prd['gambarcustomer']; ?>
-                <div class="col-md-8 col-10 ml-auto mr-auto pt-4 pb-5 client">
-                <div class="slide-client owl-carousel owl-theme">
-                 <div class="item">
-                    <img data-toggle="modal" data-target="#customer-<?= $count++ ?>"
-                        class="img-customer img-raised rounded img-fluid"
-                        src="<?= BASEURL ?>assets/upload/customer/<?= $gambarcustomer ?>" alt="" srcset="" />
+        <?php
+        if (count($data['customer'])) {
+          $count = 1;
+          foreach ($data['customer'] as $prd) {
+            //var_dump($prd);
+            $namacustomer     = $prd['namacustomer'];
+            $deskripsi        = $prd['deskripsi'];
+            $gambarcustomer   = $prd['gambarcustomer']; ?>
+            <div class="col-md-8 col-10 ml-auto mr-auto pt-4 pb-5 client">
+              <div class="slide-client owl-carousel owl-theme">
+                <div class="item">
+                  <img data-toggle="modal" data-target="#customer-<?= $count++ ?>" class="img-customer img-raised rounded img-fluid" src="<?= BASEURL ?>assets/upload/customer/<?= $gambarcustomer ?>" alt="" srcset="" />
                 </div>
-                </div>
-                </div>
-                <?php
-                }
-              }
-                ?>
-            
-          
-        </div>
-        <!-- end -->
+              </div>
+            </div>
+        <?php
+          }
+        }
+        ?>
+
+
       </div>
-    </section>
-    <!-- end client -->
-            <!-- <h5 class="description">
+      <!-- end -->
+  </div>
+  </section>
+  <!-- end client -->
+  <!-- <h5 class="description">
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
   </h5> -->
-            <!-- <div class="row">
+  <!-- <div class="row">
                 //<?php
-                //$count = 1;             
-                //*Customer
-                //foreach ($data['customer'] as $prd) {
-                    //var_dump($prd);
-                    //$namacustomer     = $prd['namacustomer'];
-                    //$deskripsi        = $prd['deskripsi'];
-                    //$gambarcustomer   = $prd['gambarcustomer']; ?>
+                  //$count = 1;             
+                  //*Customer
+                  //foreach ($data['customer'] as $prd) {
+                  //var_dump($prd);
+                  //$namacustomer     = $prd['namacustomer'];
+                  //$deskripsi        = $prd['deskripsi'];
+                  //$gambarcustomer   = $prd['gambarcustomer']; 
+                  ?>
                 <div class="col-md-3 col-6">
                     <img data-toggle="modal" data-target="#customer-<?= $count++ ?>"
                         class="img-customer img-raised rounded img-fluid"
@@ -918,7 +898,7 @@ $fotobg         = $data['banner']['fotobackground'];
                 //}
                 ?> -->
 
-                <!-- <div class="col-md-3 col-6">
+  <!-- <div class="col-md-3 col-6">
 
                     <img data-toggle="modal" data-target="#produk-1"
 
@@ -930,108 +910,108 @@ $fotobg         = $data['banner']['fotobackground'];
 
 
 
-            </div>
+  </div>
 
-        </div>
+  </div>
 
-    </div>
+  </div>
 
-</div>
+  </div>
 
-</section>
+  </section>
 
-<!-- END -->
+  <!-- END -->
 
-    <!-- client -->
-       <section class="section-padding" id="client">
-      <div class="container-fluid section-padding bg-grey pb-2">
-        <div class="section mb-0">
-          <h2 class="text-center ml-auto mr-auto" style="max-width: 600px;">Nge-deal sama ideal steel, #SemuaBisaCuan</h2>
-        </div>
-        <div class="col-md-6 col-12 ml-auto mr-auto">
-          <div class="row">
-            <div class="col-md-4 col-10 ml-auto mr-auto">
-              <img src="<?= BASEURL ?>assets/assetskk/img/07.png" class="client-item img-raised rounded img-fluid" alt="">
-            </div>
-            <div class="col-md-4 col-10 ml-auto mr-auto">
-              <img src="<?= BASEURL ?>assets/assetskk/img/07.png" class="client-item img-raised rounded img-fluid" alt="">
-            </div>
-            <div class="col-md-4 col-10 ml-auto mr-auto">
-              <img src="<?= BASEURL ?>assets/assetskk/img/07.png" class="client-item img-raised rounded img-fluid" alt="">
-            </div>
-          </div>
-          <div class="text-center ml-3 pt-1 pb-1">
-            <h4>Lebih dari 20 merek mempercayakan produknya di PT Timur Kasih Karunia. Toko anda juga bisa punya merek baja ringan sendiri!</h4>
-          </div>
-        </div>
-        <!-- carousel -->
-        <div class="col-md-8 col-10 ml-auto mr-auto pt-4 pb-5 client">
-          <div class="slide-client owl-carousel owl-theme">
-            <div class="item">
-              <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
-            </div>
-            <div class="item">
-              <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
-            </div>
-            <div class="item">
-              <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
-            </div>
-            <div class="item">
-              <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
-            </div>
-            <div class="item">
-              <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
-            </div>
-            <div class="item">
-              <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
-            </div>
-            <div class="item">
-              <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
-            </div>
-            <div class="item">
-              <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
-            </div>
-            <div class="item">
-              <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
-            </div>
-            <div class="item">
-              <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
-            </div>
-            <div class="item">
-              <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
-            </div>
-            <div class="item">
-              <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
-            </div>
-            <div class="item">
-              <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
-            </div>
-            <div class="item">
-              <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
-            </div>
-          </div>
-        </div>
-        <!-- end -->
+  <!-- client -->
+  <section class="section-padding" id="client">
+    <div class="container-fluid section-padding bg-grey pb-2">
+      <div class="section mb-0">
+        <h2 class="text-center ml-auto mr-auto" style="max-width: 600px;">Nge-deal sama ideal steel, #SemuaBisaCuan</h2>
       </div>
-    </section>
-    <!-- end client -->
+      <div class="col-md-6 col-12 ml-auto mr-auto">
+        <div class="row">
+          <div class="col-md-4 col-10 ml-auto mr-auto">
+            <img src="<?= BASEURL ?>assets/assetskk/img/07.png" class="client-item img-raised rounded img-fluid" alt="">
+          </div>
+          <div class="col-md-4 col-10 ml-auto mr-auto">
+            <img src="<?= BASEURL ?>assets/assetskk/img/07.png" class="client-item img-raised rounded img-fluid" alt="">
+          </div>
+          <div class="col-md-4 col-10 ml-auto mr-auto">
+            <img src="<?= BASEURL ?>assets/assetskk/img/07.png" class="client-item img-raised rounded img-fluid" alt="">
+          </div>
+        </div>
+        <div class="text-center ml-3 pt-1 pb-1">
+          <h4>Lebih dari 20 merek mempercayakan produknya di PT Timur Kasih Karunia. Toko anda juga bisa punya merek baja ringan sendiri!</h4>
+        </div>
+      </div>
+      <!-- carousel -->
+      <div class="col-md-8 col-10 ml-auto mr-auto pt-4 pb-5 client">
+        <div class="slide-client owl-carousel owl-theme">
+          <div class="item">
+            <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
+          </div>
+          <div class="item">
+            <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
+          </div>
+          <div class="item">
+            <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
+          </div>
+          <div class="item">
+            <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
+          </div>
+          <div class="item">
+            <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
+          </div>
+          <div class="item">
+            <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
+          </div>
+          <div class="item">
+            <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
+          </div>
+          <div class="item">
+            <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
+          </div>
+          <div class="item">
+            <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
+          </div>
+          <div class="item">
+            <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
+          </div>
+          <div class="item">
+            <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
+          </div>
+          <div class="item">
+            <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
+          </div>
+          <div class="item">
+            <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
+          </div>
+          <div class="item">
+            <img src="<?= BASEURL ?>assets/assetskk/img/07.png" alt="" class="client-img img-raised rounded img-fluid" srcset="">
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+    </div>
+  </section>
+  <!-- end client -->
 
 
-        <!-- TESTIMONI -->
+  <!-- TESTIMONI -->
 
-        <section class="section-padding" id="testimoni">
+  <section class="section-padding" id="testimoni">
 
-            <div class="bg-grey">
+    <div class="bg-grey">
 
-                <div class="section">
+      <div class="section">
 
-                    <h2 class="text-center">TESTIMONI</h2>
+        <h2 class="text-center">TESTIMONI</h2>
 
-                    <div class="col-md-8 col-10 ml-auto mr-auto ">
+        <div class="col-md-8 col-10 ml-auto mr-auto ">
 
-                        <div class="testimoni-slider owl-carousel owl-theme">
+          <div class="testimoni-slider owl-carousel owl-theme">
 
-                            <!-- <div class="item">
+            <!-- <div class="item">
 
                                 <div class="card mb-3 ml-auto mr-auto card-testimoni">
 
@@ -1079,121 +1059,113 @@ $fotobg         = $data['banner']['fotobackground'];
 
                             </div> -->
 
-                            <?php
+            <?php
 
-                            foreach ($data['testimoni']  as $ts) {
+            foreach ($data['testimoni']  as $ts) {
 
-                                $nama             = $ts['nama'];
+              $nama             = $ts['nama'];
 
-                                $perkerjaan       = $ts['perkerjaan'];
+              $perkerjaan       = $ts['perkerjaan'];
 
-                                $testimoni        = $ts['isitestimoni'];
+              $testimoni        = $ts['isitestimoni'];
 
-                                $gambar           = $ts['gambar'];
+              $gambar           = $ts['gambar'];
 
-                            ?>
+            ?>
 
-                            <div class="item">
+              <div class="item">
 
-                                <div class="card mb-3 ml-auto mr-auto card-testimoni">
+                <div class="card mb-3 ml-auto mr-auto card-testimoni">
 
-                                    <div class="col-md-12">
+                  <div class="col-md-12">
 
-                                        <div class="row">
+                    <div class="row">
 
-                                            <div class="col-md-4 pr-0 pl-0">
+                      <div class="col-md-4 pr-0 pl-0">
 
-                                                <img src="<?= BASEURL ?>assets/upload/<?= $gambar ?>" class="k"
+                        <img src="<?= BASEURL ?>assets/upload/<?= $gambar ?>" class="k" alt="..." />
 
-                                                    alt="..." />
+                      </div>
 
-                                            </div>
+                      <div class="col-md-8">
 
-                                            <div class="col-md-8">
+                        <div class="card-body pt-0 pl-0">
 
-                                                <div class="card-body pt-0 pl-0">
+                          <h4 class="card-title mb-0"><?= $nama  ?></h4>
 
-                                                    <h4 class="card-title mb-0"><?= $nama  ?></h4>
+                          <span class="badge badge-pill badge-success mb-2"><?= $perkerjaan  ?></span>
 
-                                                    <span
+                          <p class="card-text">
 
-                                                        class="badge badge-pill badge-success mb-2"><?= $perkerjaan  ?></span>
+                            <?= $testimoni ?>
 
-                                                    <p class="card-text">
-
-                                                        <?= $testimoni ?>
-
-                                                    </p>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <?php
-
-                            }
-
-
-
-                            ?>
-
-
+                          </p>
 
                         </div>
 
+                      </div>
+
                     </div>
+
+                  </div>
 
                 </div>
 
-            </div>
+              </div>
 
-        </section>
+            <?php
 
-        <!-- end -->
-
-
-
-        <!-- Hubungi KAMI -->
-
-        <section class="section-padding" id="hubungi-kami">
-
-            <div class="container-fluid section-padding hubungi-kami">
-
-                <div class="section section-padding">
-
-                    <h2 class="text-center">HUBUNGI KAMI</h2>
-
-                    <div class="col-md-12 pt-2 play-c slide-hk">
-
-                        <div id="owl-hk" class="owl-carousel owl-theme">
-
-                            <?php
-
-                        foreach ($data['hubungikami'] as $hk) {
-
-                        ?>
-
-                            <div class="item">
-
-                                <img class="mr-auto ml-auto"
-
-                                    src="<?= BASEURL ?>assets/upload/outlet/<?= $hk['gambaroutlate'] ?>" alt=""
-
-                                    srcset="" />
+            }
 
 
 
+            ?>
 
 
-                                <!-- <h1>PT Timur Kasih Karunia</h1>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- end -->
+
+
+
+  <!-- Hubungi KAMI -->
+
+  <section class="section-padding" id="hubungi-kami">
+
+    <div class="container-fluid section-padding hubungi-kami">
+
+      <div class="section section-padding">
+
+        <h2 class="text-center">HUBUNGI KAMI</h2>
+
+        <div class="col-md-12 pt-2 play-c slide-hk">
+
+          <div id="owl-hk" class="owl-carousel owl-theme">
+
+            <?php
+
+            foreach ($data['hubungikami'] as $hk) {
+
+            ?>
+
+              <div class="item">
+
+                <img class="mr-auto ml-auto" src="<?= BASEURL ?>assets/upload/outlet/<?= $hk['gambaroutlate'] ?>" alt="" srcset="" />
+
+
+
+
+
+                <!-- <h1>PT Timur Kasih Karunia</h1>
 
                   <h3>
 
@@ -1209,33 +1181,33 @@ $fotobg         = $data['banner']['fotobackground'];
 
                   > -->
 
-                            </div>
+              </div>
 
-                            <?php
+            <?php
 
-                        }
-
-
-
-                        ?>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- END -->
+            }
 
 
 
-        <!-- PROMO -->
+            ?>
 
-        <!-- <section class="section-padding" id="promo">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- END -->
+
+
+
+  <!-- PROMO -->
+
+  <!-- <section class="section-padding" id="promo">
 
         <div class="container-fluid section-padding bg-grey">
 
@@ -1305,13 +1277,13 @@ $fotobg         = $data['banner']['fotobackground'];
 
       </section> -->
 
-        <!-- END -->
+  <!-- END -->
 
 
 
-        <!-- sosial media info -->
+  <!-- sosial media info -->
 
-        <!-- <section class="section-padding">
+  <!-- <section class="section-padding">
 
         <div class="container-fluid bg-grey">
 
@@ -1449,13 +1421,13 @@ $fotobg         = $data['banner']['fotobackground'];
 
       </section> -->
 
-        <!-- end -->
+  <!-- end -->
 
 
 
-        <!-- feed ig -->
+  <!-- feed ig -->
 
-        <!-- <section class="section-padding">
+  <!-- <section class="section-padding">
 
         <div class="container-fluid">
 
@@ -3199,13 +3171,13 @@ $fotobg         = $data['banner']['fotobackground'];
 
       </section> -->
 
-        <!-- end -->
+  <!-- end -->
 
 
 
-        <!-- HUBUNGI KAMI -->
+  <!-- HUBUNGI KAMI -->
 
-        <!-- <section class="section-padding" id="hubungi-kami">
+  <!-- <section class="section-padding" id="hubungi-kami">
 
         <div class="container-fluid bg-grey">
 
@@ -3379,15 +3351,15 @@ $fotobg         = $data['banner']['fotobackground'];
 
       </section> -->
 
-        <!-- END -->
+  <!-- END -->
 
 
 
-        <!-- floating wa -->
+  <!-- floating wa -->
 
-        <div id="container-floating">
+  <div id="container-floating">
 
-            <!-- <div class="nds nd4">
+    <!-- <div class="nds nd4">
 
           <a href="#" class="buttons l-nds" tooltip="Twitter"
 
@@ -3451,103 +3423,99 @@ $fotobg         = $data['banner']['fotobackground'];
 
         </div> -->
 
-            <div id="container-floating">
+    <div id="container-floating">
 
 
 
-                <?php
+      <?php
 
-        $nomorwa = $data['hubungipusat']['nomorwa'];
+      $nomorwa = $data['hubungipusat']['nomorwa'];
 
-        ?>
+      ?>
 
-                <div id="floating-button">
+      <div id="floating-button">
 
-                    <div id="floating-btn2">
+        <div id="floating-btn2">
 
-                        <p class="text-wa">
+          <p class="text-wa">
 
-                            <a href="https://wa.me/<?= $nomorwa ?>" target="_blank">Ngobrol Lebih Lanjut</a>
+            <a href="https://wa.me/<?= $nomorwa ?>" target="_blank">Ngobrol Lebih Lanjut</a>
 
-                        </p>
-
-                    </div>
-
-                    <p class="plus"><a href="https://wa.me/<?= $nomorwa ?>" target="_blank"><i
-
-                                class="fa fa-whatsapp"></i></a>
-
-                    </p>
-
-
-
-                </div>
-
-            </div>
+          </p>
 
         </div>
 
-        <!-- end -->
+        <p class="plus"><a href="https://wa.me/<?= $nomorwa ?>" target="_blank"><i class="fa fa-whatsapp"></i></a>
+
+        </p>
+
+
+
+      </div>
 
     </div>
 
-    <footer class="footer footer-default">
+  </div>
 
-        <div class="container">
+  <!-- end -->
 
-            <div class="copyright">
+  </div>
 
-                Copyright by &copy;
+  <footer class="footer footer-default">
 
-                <script>
+    <div class="container">
 
-                document.write(new Date().getFullYear());
+      <div class="copyright">
 
-                </script>
+        Copyright by &copy;
 
-                <a href="https://timurkasihkarunia.com/" target="_blank">
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
 
-                    Timur Kasih Karunia
+        <a href="https://timurkasihkarunia.com/" target="_blank">
 
-                </a>
+          Timur Kasih Karunia
 
-            </div>
+        </a>
 
-        </div>
+      </div>
 
-    </footer>
+    </div>
 
-    <!--   Core JS Files   -->
+  </footer>
 
-    <script src="<?= BASEURL ?>assets/assetskk/js/core/jquery.min.js" type="text/javascript"></script>
+  <!--   Core JS Files   -->
 
-    <script src="<?= BASEURL ?>assets/assetskk/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="<?= BASEURL ?>assets/assetskk/js/core/jquery.min.js" type="text/javascript"></script>
 
-    <script src="<?= BASEURL ?>assets/assetskk/js/core/bootstrap-material-design.min.js" type="text/javascript">
+  <script src="<?= BASEURL ?>assets/assetskk/js/core/popper.min.js" type="text/javascript"></script>
 
-    </script>
+  <script src="<?= BASEURL ?>assets/assetskk/js/core/bootstrap-material-design.min.js" type="text/javascript">
 
-    <script src="<?= BASEURL ?>assets/assetskk/js/plugins/moment.min.js"></script>
+  </script>
 
-    <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+  <script src="<?= BASEURL ?>assets/assetskk/js/plugins/moment.min.js"></script>
 
-    <script src="<?= BASEURL ?>assets/assetskk/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
 
-    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="<?= BASEURL ?>assets/assetskk/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
 
-    <script src="<?= BASEURL ?>assets/assetskk/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
 
-    <!--  Google Maps Plugin    -->
+  <script src="<?= BASEURL ?>assets/assetskk/js/plugins/nouislider.min.js" type="text/javascript"></script>
 
-    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+  <!--  Google Maps Plugin    -->
 
-    <script src="<?= BASEURL ?>assets/assetskk/js/material-kit.js?v=2.0.7" type="text/javascript"></script>
+  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
 
-    <script src="<?= BASEURL ?>assets/assetskk/js/owl.carousel.min.js"></script>
+  <script src="<?= BASEURL ?>assets/assetskk/js/material-kit.js?v=2.0.7" type="text/javascript"></script>
 
-    <script src="<?= BASEURL ?>assets/assetskk/js/smoothscroll.js"></script>
+  <script src="<?= BASEURL ?>assets/assetskk/js/owl.carousel.min.js"></script>
 
-    <script src="<?= BASEURL ?>assets/assetskk/js/custom.js"></script>
+  <script src="<?= BASEURL ?>assets/assetskk/js/smoothscroll.js"></script>
+
+  <script src="<?= BASEURL ?>assets/assetskk/js/custom.js"></script>
 
 </body>
 

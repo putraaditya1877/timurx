@@ -2,8 +2,6 @@
 
 define('BASEURL', 'http://localhost/timurx/');
 
-
-
 //Lokasi Penyimpanan Foto
 
 define('BASELOKSAVE', 'C:\laragon\www\timurx');

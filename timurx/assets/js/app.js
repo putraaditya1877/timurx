@@ -1,43 +1,22 @@
-// $(document).ready(function () {
-//   //untuk memanggil plugin select2
-//   $("#topcustomer").select2({
-//     placeholder: "pilih topcustomer",
-//     language: "id",
-//   });
-
-//   //saat pilihan customer di pilih, maka akan mengambil data nama customer
-//   //di topcustomer.php menggunakan ajax
-//   $("#topcustomer").change(function () {
-//     $("img#load1").show();
-//     var id = $(this).val();
-//     $.ajax({
-//       type: "POST",
-//       dataType: "html",
-//       url: "data-wilayah.php?jenis=kota",
-//       data: "id=" + id,
-//       success: function (msg) {
-//         $("select#customer").html(msg);
-//         $("img#load1").hide();
-//         getAjaxtopcustomer();
-//       },
-//     });
-//   });
-// });
-
 $(function () {
-  $(".droptop").on("click", function () {
+  $(".droptop").change(function () {
     $("#droptoplabel").html("tampilkan customer");
-    const id = $("#data").val();
-    // console.log(id);
+    const id = $("#droptop").val();
+    // alert("oke");
+    console.log(id);
 
     $.ajax({
-      url: "controllers/topcustomer/getdroptop",
-      // data: { id: id },
+      url: "ajaxtopcustomer/getdroptop",
+      //
       method: "post",
-      dataType: "json",
+      //dataType: "json",
+      data: {
+        namacustomer: id,
+      },
 
-      success: function (data) {
-        console.log(data);
+      success: function (test) {
+        console.log("test");
+        console.log(test);
         // $("#nama").val(data.id);
         // $("#nama").val(data.namacustomer);
         // $("#deskripsi").val(data.deskripsi);
@@ -45,4 +24,13 @@ $(function () {
       },
     });
   });
+});
+
+$(document).ready(function () {
+  //Get
+  var id = $("#idx").val();
+
+  //Set
+  $("#droptop").val(id);
+  // alert($("#droptop").val(id));
 });
