@@ -1,0 +1,468 @@
+:root {
+  --grey: #eee;
+  --white: #ffffff;
+  --green: #55b559;
+  --red: #ff3333;
+}
+
+.bg-grey {
+  background-color: var(--grey);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+.section-padding {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.img-produk {
+  margin: 10px;
+  cursor: pointer;
+}
+.img-produk:hover {
+  opacity: 0.8;
+}
+
+footer {
+  background-color: var(--white);
+}
+
+
+/*-----------------------
+        TOP KONTEN
+-------------------------*/
+.top-content{
+  margin-top: -300px;
+}
+/*-----------------------
+      TENTANG KAMI
+-------------------------*/
+
+#owl-tk .item img {
+  display: block;
+  width: 92%;
+  height: auto;
+}
+#owl-tk .item h1 {
+  max-width: 900px;
+  position: absolute;
+  color: #ffffff;
+  font-weight: 700;
+  top: 55%;
+  left: 7.5%;
+}
+/*-----------------------
+      Layanan Kami
+-------------------------*/
+.layanan-item {
+  margin: 10px;
+  cursor: pointer;
+}
+.layanan-item:hover {
+  opacity: 0.8;
+}
+
+/*-----------------------
+      Hubungi Kami
+-------------------------*/
+.card {
+  width: 16rem;
+}
+/*-----------------------
+      Floating Widget
+-------------------------*/
+#floating-btn2 {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--red);
+  position: fixed;
+  bottom: 67px;
+  right: 170px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px #666;
+}
+.text-wa {
+  font-size: 14pt;
+  font-weight: bold;
+  color: var(--white);
+  margin-top: 8px;
+  margin-left: 15px;
+  transition: all 0.3s;
+}
+#floating-button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: var(--green);
+  position: fixed;
+  bottom: 60px;
+  right: 100px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px #666;
+}
+.plus {
+  color: var(--white);
+  position: absolute;
+  top: 0;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 55px;
+  font-size: 38px;
+  font-family: "Roboto";
+  font-weight: 300;
+  animation: plus-out 0.3s;
+  transition: all 0.3s;
+}
+#container-floating {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 30px;
+  right: 30px;
+  z-index: 50px;
+  z-index: 100;
+}
+#container-floating.is-opened .plus {
+  animation: plus-in 0.15s linear;
+  animation-fill-mode: forwards;
+}
+#container-floating.is-opened #floating-btn2 {
+  animation: text-in 0.15s linear;
+  animation-fill-mode: forwards;
+}
+
+/* #container-floating .is-opened #floating-btn2 {
+  animation: text-out 0.15s linear;
+  animation-fill-mode: forwards;
+} */
+@keyframes text-in {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+/* @keyframes text-out {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+} */
+.close {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  right: 0;
+  padding: 0;
+  opacity: 0;
+  margin: auto;
+  line-height: 65px;
+  transform: rotateZ(-70deg);
+  transition: all 0.3s;
+  animation: close-out 0.3s;
+}
+#container-floating.is-opened .close {
+  animation: close-in 0.2s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+@keyframes close-in {
+  from {
+    opacity: 0;
+    transform: rotateZ(-70deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes close-out {
+  from {
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+  to {
+    opacity: 0;
+    transform: rotateZ(-70deg);
+  }
+}
+@keyframes plus-in {
+  from {
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+  to {
+    opacity: 0;
+    transform: rotateZ(180deg);
+  }
+}
+@keyframes plus-out {
+  from {
+    opacity: 0;
+    transform: rotateZ(180deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+}
+/* btn lingkaran */
+.nds {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  position: fixed;
+  z-index: 300;
+  transform: scale(0);
+  transition: width 0.25s;
+  cursor: pointer;
+}
+.l-nds {
+  display: block;
+  font-size: 20pt;
+  margin-left: 9px;
+  margin-top: 8px;
+  color: var(--white);
+}
+.nd1 {
+  background: var(--green);
+  right: 110px;
+  bottom: 150px;
+  animation-delay: 0.2s;
+  animation: bounce-out-nds 0.3s linear;
+  animation-fill-mode: forwards;
+}
+.nd2 {
+  background: var(--green);
+  right: 110px;
+  bottom: 200px;
+  animation-delay: 0.15s;
+  animation: bounce-out-nds 0.15s linear;
+  animation-fill-mode: forwards;
+}
+.nd3 {
+  background: var(--green);
+  right: 110px;
+  bottom: 250px;
+  animation-delay: 0.1s;
+  animation: bounce-out-nds 0.1s linear;
+  animation-fill-mode: forwards;
+}
+.nd4 {
+  background: var(--green);
+  right: 110px;
+  bottom: 300px;
+  animation-delay: 0.08s;
+  animation: bounce-out-nds 0.1s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes bounce-nds {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes bounce-out-nds {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+#container-floating.is-opened .nds {
+  animation: bounce-nds 0.1s linear;
+  animation-fill-mode: forwards;
+}
+#container-floating.is-opened .nd2 {
+  animation-delay: 0.08s;
+}
+#container-floating.is-opened .nd3 {
+  animation-delay: 0.15s;
+}
+#container-floating.is-opened .nd4 {
+  animation-delay: 0.2s;
+}
+/* btn nama */
+.sdn {
+  width: 160px;
+  height: 40px;
+  border: 2px solid var(--red);
+  border-radius: 15px;
+  position: fixed;
+  z-index: 300;
+  transform: scale(0);
+  transition: width 0.25s;
+  cursor: pointer;
+}
+.l-sdn {
+  display: block;
+  margin-top: 6px;
+  margin-left: 45px;
+  font-size: 15pt;
+  font-weight: 400;
+  color: var(--green);
+}
+.sd1 {
+  background: var(--white);
+  right: 160px;
+  bottom: 150px;
+  animation-delay: 0.2s;
+  animation: bounce-out-sdn 0.3s linear;
+  animation-fill-mode: forwards;
+}
+.sd2 {
+  background: var(--white);
+  right: 160px;
+  bottom: 200px;
+  animation-delay: 0.15s;
+  animation: bounce-out-sdn 0.15s linear;
+  animation-fill-mode: forwards;
+}
+.sd3 {
+  background: var(--white);
+  right: 160px;
+  bottom: 250px;
+  animation-delay: 0.1s;
+  animation: bounce-out-sdn 0.1s linear;
+  animation-fill-mode: forwards;
+}
+.sd4 {
+  background: var(--white);
+  right: 160px;
+  bottom: 300px;
+  animation-delay: 0.08s;
+  animation: bounce-out-sdn 0.1s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes bounce-sdn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes bounce-out-sdn {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+#container-floating.is-opened .sdn {
+  animation: bounce-sdn 0.1s linear;
+  animation-fill-mode: forwards;
+}
+#container-floating.is-opened .sd2 {
+  animation-delay: 0.08s;
+}
+#container-floating.is-opened .sd3 {
+  animation-delay: 0.15s;
+}
+#container-floating.is-opened .sd4 {
+  animation-delay: 0.2s;
+}
+.reminder {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  line-height: 40px;
+}
+
+.box-sos {
+  padding-top: 80px;
+}
+.t-sos {
+  padding-top: 10px;
+}
+/*-----------------------
+          MEDIA
+-------------------------*/
+@media screen and (max-width: 991px) {
+  .card {
+    width: 12rem;
+  }
+}
+
+/* @media screen and (min-width: 767px and max-width 770px) {
+  #owl-demo .item span {
+    max-width: 900px;
+    position: absolute;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16pt;
+    top: 50%;
+    left: 7.5%;
+  }
+} */
+
+@media screen and (max-width: 750px) {
+  .top-content {
+    margin-top: 0;
+    margin-right: 40px;
+  }
+  .img-produk {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .card {
+    width: 20rem;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  #container-floating {
+    display: none;
+  }
+  .box-sos {
+    padding-top: 0px;
+  }
+  .t-sos {
+    padding-top: 0px;
+    font-size: 10pt;
+  }
+  #owl-tk .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  #owl-tk .item h1 {
+    max-width: 900px;
+    position: absolute;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12pt;
+    top: 45%;
+    left: 4.3%;
+  }
+}
